@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+// context
+import { weatherContext } from '../lib/weatherContext'
 
 const index = () => {
+  const { state, dispatch } = weatherContext()
+
   return (
     <div>
-      INDEX
+      <h1>Index</h1>
     </div>
   )
 }

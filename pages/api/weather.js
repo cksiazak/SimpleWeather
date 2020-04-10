@@ -1,6 +1,7 @@
 import fetch from 'isomorphic-unfetch';
 
 export default async (req, res) => {
+
   try {
     const data = await fetch(
       `https://api.darksky.net/forecast/${process.env.DARKSKY}/37.8267,-122.4233`
